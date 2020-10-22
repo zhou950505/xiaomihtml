@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+  </head>
+  <body>
+    <div class="head">
+      <div class="c">
+        <a href="#">
+          <img src="./img/mistore_logo.png" alt="" />
+        </a>
+      </div>
+    </div>
+    <div class="banner">
+      <div class="c">
+        <form action="">
+          <div class="tabs">
+            <a class="a1">账号登录</a>
+            <span class="line"></span>
+            <a class="a2">扫码登录</a>
+            <div class="pwd" id="s1">
+              <input
+                type="text"
+                placeholder="邮箱/手机号码/小米ID"
+                name="user1"
+              />
+              <input type="password" name="pass1" id="" placeholder="密码" />
+              <input type="submit" value="登录" class="sub" />
+            </div>
+            <div class="tgjl" id="s2">
+              <img src="./img/tgjl-1.jpg" alt="" />
+            </div>
+            <div class="tgjl2" id="s3">
+              <img src="./img/tgjl-2.jpg" alt="" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./js/jquery-1.11.0.js"></script>
+    <script src="./js/ajax2.js"></script>
+    <script src="./js/mi-login.js"></script>
+    <script src="./js/cookie.js"></script>
+
+    <!--     <script>
+      //获取表单元素
+      var btn = document.querySelector(".sub");
+      btn.onclick = function () {
+        var u1 = document.querySelector('[name="user1"]').value;
+        var p1 = document.querySelector('[name="pass1"]').value;
+
+        //获取localstrong中的用户表（zhuceList）
+        var zhuceList = localStorage.getItem("zhuceList");
+        //判断该数据是否存在
+        if (zhuceList) {
+          //转为json对象
+          zhuceList = JSON.parse(zhuceList);
+          var a = false;
+          //遍历数组中所有元素
+          zhuceList.forEach(function (item) {
+            //判断给数据中的内容是否跟传入的内容相等
+            if (item.username == u1 && item.password == p1) {
+              a = true;
+            }
+          });
+          if (a) {
+            alert("登录成功");
+            location.href = "miminegwc.html";
+          } else {
+            alert("账号或密码错误");
+          }
+        } else {
+          alert("该用户表不存在");
+        }
+      };
+    </script> -->
+  </body>
+</html>

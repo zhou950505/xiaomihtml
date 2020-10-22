@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/xiaomizhuce.css" />
+    <script src="./jquery/jquery.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="warp">
+        <div class="logo">
+          <img src="./img/mi-logo.jpg" alt="" />
+        </div>
+        <div class="title">
+          <h4>注册小米账号</h4>
+        </div>
+        <form name="frm">
+          账号：<input type="text" name="user" class="username" />
+          <br />
+          密码：<input type="password" name="pass" class="password" />
+          <br />
+          <!-- 地址：<input type="text" name="address" />
+          <br /> -->
+          <button type="button" class="btn">立即注册</button>
+          <!-- <button type="button">显示信息</button> -->
+        </form>
+        <p>已阅读并同意：小米<span>用户协议</span>和<span>隐私政策</span></p>
+      </div>
+      <p>简体&nbsp; | &nbsp;繁体 | &nbsp;English&nbsp; | &nbsp;常见问题</p>
+      <p>
+        小米公司版权所有-京ICP备10046444-<img
+          src="./img/ghs2.png"
+          alt=""
+        />京公网安备11010802020134号-京ICP证110507号
+      </p>
+    </div>
+    <!-- <div></div> -->
+    <!--     <script>
+      //获取操作对象
+      var btn = document.querySelector("button");
+      //   var div1 = document.querySelector("div");
+      var btn2 = document.querySelectorAll("button")[1];
+      /*       btn2.onclick = function () {
+        //获取localstrong中的zhucelist信息
+        var zhuceList = localStorage.getItem("zhuceList");
+        //转换
+        zhuceList = JSON.parse(zhuceList);
+        var str = "";
+        //遍历数组中所有元素
+        zhuceList.forEach(function (item) {
+          str += `<h1>
+                    姓名：${item.username}，
+                    密码：${item.password}，
+                    地址：${item.address}
+                    </h1>`;
+        });
+        //把数据追加到div对象中
+        div1.innerHTML = str;
+      }; */
+
+      //给按钮绑定点击事件
+      btn.onclick = function () {
+        //获取表单元素
+        var u1 = document.frm.user.value;
+        var p1 = document.frm.pass.value;
+        // var d1 = document.frm.address.value;
+
+        //创建对象
+        var obj = {
+          username: u1,
+          password: p1,
+          //   address: d1,
+        };
+        //获取localstrong中的数据
+        var zhuceList = localStorage.getItem("zhuceList");
+        //判断该对象中是否存在该内容
+        if (zhuceList) {
+          //把字符串转为json对象,重新赋值给zhuceList
+          zhuceList = JSON.parse(zhuceList);
+          var a = false; //判断添加的数据是否存在
+          //遍历该数组中所有元素
+          zhuceList.forEach(function (item) {
+            //判断存储的数据中是否跟新添加的内容相等
+            if (item.username == obj.username) {
+              a = true;
+            }
+          });
+          if (a) {
+            alert("该内容已存在，不能注册");
+          } else {
+            //当添加的数据不存在时,把当前对象追加当数组中
+            zhuceList.push(obj);
+            // console.log(zhuceList)
+            //重新给localstrong中的zhuceList键赋值
+            localStorage.setItem("zhuceList", JSON.stringify(zhuceList));
+            /*    alert("注册成功");
+            window.location.href =
+              "http://localhost/handsome_cjm/xiaomi/mi-login.html"; */
+          }
+        } else {
+          //保存数据
+          // var ar1=[]
+          // ar1.push(obj)
+          localStorage.setItem("zhuceList", JSON.stringify([obj]));
+        }
+      };
+    </script> -->
+
+    <script>
+      $(".btn").click(function () {
+        var user1 = $(".username").val();
+        var pass1 = $(".password").val();
+        $.ajax({
+          url: "./php/zhuce.php",
+          type: "get",
+          data: { username: user1, password: pass1 },
+          success: function (data) {
+            console.log(data);
+            if (data == 1) {
+              // 账号存在处理
+              alert("账号已存在，请重新输入");
+            } else {
+              //账号不存在 注册一个账号 并写入数据库
+              //写入成功，表示注册成功然后转换到登入页面
+              alert("账号注册成功，请重新登录");
+              location.href = "./mi-login.html";
+            }
+          },
+        });
+      });
+    </script>
+  </body>
+</html>

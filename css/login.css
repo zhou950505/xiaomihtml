@@ -1,0 +1,87 @@
+.c {
+  width: 1130px;
+  margin: 0 auto;
+}
+.head {
+  height: 98px;
+  background-color: #ffffff;
+}
+.banner {
+  height: 700px;
+  background: url(../img/aece569d6689b4c461bb53efd9eea9c7.jpg) no-repeat;
+  background-position: top center;
+}
+form {
+  width: 410px;
+  height: 554px;
+  float: right;
+  background-color: #ffffff;
+  margin-top: 34px;
+  position: relative;
+}
+.tabs {
+  padding: 27px 0 0 0;
+  text-align: center;
+  font-size: 24px;
+  color: #666;
+}
+.tabs a {
+  color: #666;
+}
+.tabs a:hover {
+  color: #ff6700;
+}
+.line {
+  width: 1px;
+  height: 24px;
+  margin: 0 35px 0 35px;
+  border: 1px solid #e0e0e0;
+  background: #e0e0e0;
+}
+.pwd {
+  height: 200px;
+  margin-top: 20px;
+  display: block;
+}
+.pwd input {
+  margin: 0 auto 16px;
+  width: 306px;
+  height: 22px;
+  line-height: 22px;
+  padding: 13px 16px 13px 14px;
+  display: block;
+  border: 1px solid #e0e0e0;
+}
+input::-webkit-input-placeholder {
+  color: #9b9b9b;
+}
+.pwd .sub {
+  margin-top: 40px;
+  background-color: #ff6700;
+  width: 340px;
+  height: 50px;
+  border: none;
+  color: #ffffff;
+}
+.tgjl {
+  display: block;
+  width: 348px;
+  height: 248px;
+  margin: 10px auto 0;
+}
+.tgjl img {
+  width: 348px;
+  height: 248px;
+}
+.tgjl2 {
+  width: 348px;
+  height: 322px;
+  position: absolute;
+  top: 216px;
+  left: 30px;
+  display: none;
+}
+.tgjl2 img {
+  width: 348px;
+  height: 322px;
+}

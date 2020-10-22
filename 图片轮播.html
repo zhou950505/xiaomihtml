@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        text-decoration: none;
+      }
+      .wrap {
+        width: 1226px;
+        height: 670px;
+        margin: 50px auto;
+        position: relative;
+      }
+      .imgs img {
+        width: 1226px;
+        height: 470px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+        opacity: 0.1;
+      }
+      .num {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        overflow: hidden;
+        z-index: 10;
+      }
+      .num span {
+        float: left;
+        width: 23px;
+        height: 23px;
+        border-radius: 50%;
+        background-color: #cccccc;
+        text-align: center;
+        line-height: 23px;
+        margin-left: 10px;
+        cursor: pointer;
+      }
+      .arrow {
+        width: 40px;
+        height: 40px;
+        background-color: #000;
+        line-height: 40px;
+        font-size: 36px;
+        font-weight: bold;
+        color: #fff;
+        position: absolute;
+        top: 180px;
+        z-index: 10;
+        display: none;
+      }
+      .left {
+        left: 20px;
+      }
+      .right {
+        right: 20px;
+      }
+      .wrap:hover .arrow {
+        display: inline;
+      }
+      .num .show {
+        background-color: #000000;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="imgs">
+        <img
+          src="./img/6f834e0dcded7308aaedb77b5ee7269c.jpg"
+          style="z-index: 2"
+          class="img2"
+        />
+        <img src="./img/84cec825f1cd04ea6554fece8ecbc236.webp" class="img2" />
+        <img src="./img/865816ec969ed2498a22213d56cce952.webp" class="img2" />
+        <img src="./img/a6d74432da3ee355087e8e9d5eb46057.webp" class="img2" />
+        <img src="./img/33366082cf3f5561d2c4950d94974a85.webp" class="img2" />
+      </div>
+      <a href="javascript:;" class="arrow left">&lt;</a>
+      <a href="javascript:;" class="arrow right">&gt;</a>
+      <div class="num">
+        <span class="span1 show"></span>
+        <span class="span1"></span>
+        <span class="span1"></span>
+        <span class="span1"></span>
+        <span class="span1"></span>
+      </div>
+    </div>
+    <script>
+      //获取所有操作对象
+      var imgs = document.querySelectorAll(".img2");
+      var spans = document.querySelectorAll(".span1");
+      var left1 = document.querySelector(".left");
+      var right1 = document.querySelector(".right");
+      var wrap = document.querySelector(".wrap");
+      var timer1, timer2; //定时器
+      var index = 0; //图片和按钮的下标
+      move(imgs[0], 100);
+
+      //开始函数
+      autoMove();
+      function autoMove() {
+        timer2 = setInterval(function () {
+          hideImg();
+          if (index == imgs.length - 1) {
+            index = 0;
+          } else {
+            index++;
+          }
+          showImg();
+        }, 3000);
+      }
+      //下一张图片
+      right1.onclick = function () {
+        hideImg();
+        if (index == imgs.length - 1) {
+          index = 0;
+        } else {
+          index++;
+        }
+        showImg();
+      };
+      //上一张图片
+      left1.onclick = function () {
+        hideImg();
+        if (index == 0) {
+          index = spans.length - 1;
+        } else {
+          index--;
+        }
+        showImg();
+      };
+
+      //给所有按钮绑定一个点击事件
+      for (let i = 0; i < spans.length; i++) {
+        spans[i].onclick = function () {
+          hideImg();
+          //把当前按钮的下标赋值给index
+          index = i;
+          showImg();
+        };
+      }
+      //当前要隐藏的图片
+      function hideImg() {
+        //透明图片
+        imgs[index].style.opacity = 0.1;
+        //把层级关系变小
+        imgs[index].style.zIndex = 1;
+        //清空按钮的class属性值
+        spans[index].className = "";
+      }
+      //马上要显示的图片
+      function showImg() {
+        //把层级关系变大
+        imgs[index].style.zIndex = 2;
+        //给按钮添加class属性值
+        spans[index].className = "show";
+        move(imgs[index], 100);
+      }
+      //运动函数
+      function move(dom, end) {
+        var opa = 10; //图片默认透明度
+        clearInterval(timer1);
+        timer1 = setInterval(function () {
+          if (end > opa) {
+            var speed = 2;
+          } else {
+            var speed = -2;
+          }
+          //临界条件
+          if (Math.abs(end - opa) <= Math.abs(speed)) {
+            clearInterval(timer1);
+            dom.style.opacity = end / 100;
+          } else {
+            opa += speed;
+            dom.style.opacity = opa / 100;
+          }
+        }, 20);
+      }
+      //给大盒子绑定鼠标移入移出事件
+      wrap.onmouseover = function () {
+        clearInterval(timer2);
+      };
+      wrap.onmouseout = function () {
+        autoMove();
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>小米首页</title>
+    <link rel="stylesheet" href="./css/swiper.min.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./font_1949202_21h1ztm2o8m/iconfont.css" />
+    <link rel="stylesheet" href="./css/shouye.css" />
+    <script src="./jquery/jquery.js"></script>
+  </head>
+  <body>
+    <div class="guanggao">
+      <img src="./img/guanggao.jpg" alt="" />
+    </div>
+    <div class="header">
+      <div class="c">
+        <ul class="nav">
+          <li>
+            <a href="#">小米商城<span class="vertical">|</span></a>
+          </li>
+          <li>
+            <a href="#">MIUI<span class="vertical">|</span></a>
+          </li>
+          <li>
+            <a href="#">loT<span class="vertical">|</span></a>
+          </li>
+          <li>
+            <a href="#">云服务<span class="vertical">|</span></a>
+          </li>
+          <li>
+            <a href="#">金融<span class="vertical">|</span></a>
+          </li>
+          <li>
+            <a href="#">有品<span class="vertical">|</span></a>
+          </li>
+          <li>
+            <a href="#">小米爱开放<span class="vertical">|</span></a>
+          </li>
+          <li>
+            <a href="#">企业团购<span class="vertical">|</span></a>
+          </li>
+          <li>
+            <a href="#">资质证照<span class="vertical">|</span></a>
+          </li>
+          <li>
+            <a href="#">协议规则<span class="vertical">|</span></a>
+          </li>
+          <li class="download">
+            <a href="#"
+              >下载app
+              <div class="load">
+                <img src="./img/download.png" alt="" />
+                <p>小米商城 APP</p>
+              </div>
+              <span class="vertical">|</span>
+            </a>
+          </li>
+          <script>
+            $(".download").hover(function () {
+              if ($(".load").is(":hidden")) {
+                $(".load").slideDown(200);
+              } else {
+                $(".load").slideUp(200);
+              }
+            });
+          </script>
+          <li>
+            <a href="#">智能生活<span class="vertical">|</span></a>
+          </li>
+          <li><a href="#">Select Location</a></li>
+        </ul>
+        <ul class="nav-right">
+          <li>
+            <a href="./mi-login.html">登录<span class="vertical">|</span></a>
+          </li>
+          <li>
+            <a href="./xiaomizhuce.html">注册<span class="vertical">|</span></a>
+          </li>
+          <li><a href="#">消息通知</a></li>
+          <li class="shop-cart iconfont">
+            <a href="./mi-gwc.html">&#xe60a; 购物车(0)</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- 右侧选项卡 -->
+    <div class="tab-right">
+      <a href="#"><span class="iconfont">&#xe619;</span>手机APP</a>
+      <a href="#"><span class="iconfont">&#xe607;</span> 个人中心</a>
+      <a href="#"><span class="iconfont">&#xe627;</span> 售后服务</a>
+      <a href="#"><span class="iconfont">&#xe954;</span> 人工客服</a>
+      <a href="./mi-gwc.html"><span class="iconfont">&#xe60a;</span> 购物车</a>
+      <a href="#" class="returntop"
+        ><span class="iconfont">&#xe625;</span>回顶部</a
+      >
+      <!-- <script src="./js/returntop.js"></script> -->
+    </div>
+
+    <!-- 右侧选项卡结束 -->
+    <div class="main">
+      <div class="main-header">
+        <div class="c">
+          <img src="./img/mi-logo.jpg" alt="" class="mi-logo" />
+          <ul class="main-nav">
+            <li><a href="#">小米手机</a></li>
+            <li><a href="#">Redmi 红米</a></li>
+            <li><a href="#">电视</a></li>
+            <li><a href="#">笔记本</a></li>
+            <li><a href="#">家电</a></li>
+            <li><a href="#">路由器</a></li>
+            <li><a href="#">智能硬件</a></li>
+            <li><a href="#">服务</a></li>
+            <li><a href="#">社区</a></li>
+          </ul>
+          <form action="">
+            <input type="text" class="shurukuang" />
+            <input type="submit" class="search iconfont" value="&#xe637;" />
+          </form>
+        </div>
+      </div>
+      <!-- 轮播图开始 -->
+      <div class="main-header2">
+        <div class="c">
+          <div class="wrap">
+            <div class="imgs">
+              <img
+                src="./img/6f834e0dcded7308aaedb77b5ee7269c.jpg"
+                style="z-index: 2"
+                class="img2"
+              />
+              <img
+                src="./img/84cec825f1cd04ea6554fece8ecbc236.webp"
+                class="img2"
+              />
+              <img
+                src="./img/865816ec969ed2498a22213d56cce952.webp"
+                class="img2"
+              />
+              <img
+                src="./img/a6d74432da3ee355087e8e9d5eb46057.webp"
+                class="img2"
+              />
+              <img
+                src="./img/33366082cf3f5561d2c4950d94974a85.webp"
+                class="img2"
+              />
+            </div>
+            <a href="javascript:;" class="arrow left iconfont">&#xe655;</a>
+            <a href="javascript:;" class="arrow right iconfont">&#xe655;</a>
+            <div class="num">
+              <span class="span1 show"></span>
+              <span class="span1"></span>
+              <span class="span1"></span>
+              <span class="span1"></span>
+              <span class="span1"></span>
+            </div>
+          </div>
+          <script src="./js/lunbo.js"></script>
+          <div class="header2-nav">
+            <ul class="nav-lunbo">
+              <li class="li-left">
+                <a href="#"
+                  >手机 电话卡<span class="iconfont">&#xe655;</span></a
+                >
+                <div class="lunbo-more1">
+                  <ul class="ul-right1">
+                    <li class="li-right">
+                      <a href="#"
+                        ><img src="./img/small-phone1.webp" alt="" /><span
+                          class="text1"
+                          >小米10至尊纪念版</span
+                        >
+                      </a>
+                    </li>
+                    <li class="li-right">
+                      <a href="#"
+                        ><img src="./img/small-phone1.webp" alt="" /><span
+                          class="text1"
+                          >小米10至尊纪念版</span
+                        >
+                      </a>
+                    </li>
+                    <li class="li-right">
+                      <a href="#"
+                        ><img src="./img/small-phone1.webp" alt="" /><span
+                          class="text1"
+                          >小米10至尊纪念版</span
+                        >
+                      </a>
+                    </li>
+                    <li class="li-right">
+                      <a href="#"
+                        ><img src="./img/small-phone1.webp" alt="" /><span
+                          class="text1"
+                          >小米10至尊纪念版</span
+                        >
+                      </a>
+                    </li>
+                    <li class="li-right">
+                      <a href="#"
+                        ><img src="./img/small-phone1.webp" alt="" /><span
+                          class="text1"
+                          >小米10至尊纪念版</span
+                        >
+                      </a>
+                    </li>
+                    <li class="li-right">
+                      <a href="#"
+                        ><img src="./img/small-phone1.webp" alt="" /><span
+                          class="text1"
+                          >小米10至尊纪念版</span
+                        >
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="ul-right1">
+                    <li class="li-right">
+                      <a href="#"
+                        ><img src="./img/small-phone1.webp" alt="" /><span
+                          class="text1"
+                          >小米10至尊纪念版</span
+                        >
+                      </a>
+                    </li>
+                    <li class="li-right">
+                      <a href="#"
+                        ><img src="./img/small-phone1.webp" alt="" /><span
+                          class="text1"
+                          >小米10至尊纪念版</span
+                        >
+                      </a>
+                    </li>
+                    <li class="li-right">
+                      <a href="#"
+                        ><img src="./img/small-phone1.webp" alt="" /><span
+                          class="text1"
+                          >小米10至尊纪念版</span
+                        >
+                      </a>
+                    </li>
+                    <li class="li-right">
+                      <a href="#"
+                        ><img src="./img/small-phone1.webp" alt="" /><span
+                          class="text1"
+                          >小米10至尊纪念版</span
+                        >
+                      </a>
+                    </li>
+                    <li class="li-right">
+                      <a href="#"
+                        ><img src="./img/small-phone1.webp" alt="" /><span
+                          class="text1"
+                          >小米10至尊纪念版</span
+                        >
+                      </a>
+                    </li>
+                    <li class="li-right">
+                      <a href="#"
+                        ><img src="./img/small-phone1.webp" alt="" /><span
+                          class="text1"
+                          >小米10至尊纪念版</span
+                        >
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="ul-right1">
+                    <li class="li-right">
+                      <a href="#"
+                        ><img src="./img/small-phone1.webp" alt="" /><span
+                          class="text1"
+                          >小米10至尊纪念版</span
+                        >
+                      </a>
+                    </li>
+                    <li class="li-right">
+                      <a href="#"
+                        ><img src="./img/small-phone1.webp" alt="" /><span
+                          class="text1"
+                          >小米10至尊纪念版</span
+                        >
+                      </a>
+                    </li>
+                    <li class="li-right">
+                      <a href="#"
+                        ><img src="./img/small-phone1.webp" alt="" /><span
+                          class="text1"
+                          >小米10至尊纪念版</span
+                        >
+                      </a>
+                    </li>
+                    <li class="li-right">
+                      <a href="#"
+                        ><img src="./img/small-phone1.webp" alt="" /><span
+                          class="text1"
+                          >小米10至尊纪念版</span
+                        >
+                      </a>
+                    </li>
+                    <li class="li-right">
+                      <a href="#"
+                        ><img src="./img/small-phone1.webp" alt="" /><span
+                          class="text1"
+                          >小米10至尊纪念版</span
+                        >
+                      </a>
+                    </li>
+                    <li class="li-right">
+                      <a href="#"
+                        ><img src="./img/small-phone1.webp" alt="" /><span
+                          class="text1"
+                          >小米10至尊纪念版</span
+                        >
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="ul-right1">
+                    <li class="li-right">
+                      <a href="#"
+                        ><img src="./img/small-phone1.webp" alt="" /><span
+                          class="text1"
+                          >小米10至尊纪念版</span
+                        >
+                      </a>
+                    </li>
+                    <li class="li-right">
+                      <a href="#"
+                        ><img src="./img/small-phone1.webp" alt="" /><span
+                          class="text1"
+                          >小米10至尊纪念版</span
+                        >
+                      </a>
+                    </li>
+                    <li class="li-right">
+                      <a href="#"
+                        ><img src="./img/small-phone1.webp" alt="" /><span
+                          class="text1"
+                          >小米10至尊纪念版</span
+                        >
+                      </a>
+                    </li>
+                    <li class="li-right">
+                      <a href="#"
+                        ><img src="./img/small-phone1.webp" alt="" /><span
+                          class="text1"
+                          >小米10至尊纪念版</span
+                        >
+                      </a>
+                    </li>
+                    <li class="li-right">
+                      <a href="#"
+                        ><img src="./img/small-phone1.webp" alt="" /><span
+                          class="text1"
+                          >小米10至尊纪念版</span
+                        >
+                      </a>
+                    </li>
+                    <li class="li-right">
+                      <a href="#"
+                        ><img src="./img/small-phone1.webp" alt="" /><span
+                          class="text1"
+                          >小米10至尊纪念版</span
+                        >
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="li-left">
+                <a href="#">电视 盒子<span class="iconfont">&#xe655;</span> </a>
+                <div class="lunbo-more1 lunbo-more2" style="top: -62px">
+                  <ul>
+                    <li class="li-right">
+                      <a href="#"
+                        ><img src="./img/small-TV1.webp" alt="" /><span
+                          class="text1"
+                          >小米透明电视</span
+                        >
+                      </a>
+                    </li>
+                    <li class="li-right">
+                      <a href="#"
+                        ><img src="./img/small-TV1.webp" alt="" /><span
+                          class="text1"
+                          >小米透明电视</span
+                        >
+                      </a>
+                    </li>
+                    <li class="li-right">
+                      <a href="#"
+                        ><img src="./img/small-TV1.webp" alt="" /><span
+                          class="text1"
+                          >小米透明电视</span
+                        >
+                      </a>
+                    </li>
+                    <li class="li-right">
+                      <a href="#"
+                        ><img src="./img/small-TV1.webp" alt="" /><span
+                          class="text1"
+                          >小米透明电视</span
+                        >
+                      </a>
+                    </li>
+                    <li class="li-right">
+                      <a href="#"
+                        ><img src="./img/small-TV1.webp" alt="" /><span
+                          class="text1"
+                          >小米透明电视</span
+                        >
+                      </a>
+                    </li>
+                    <li class="li-right">
+                      <a href="#"
+                        ><img src="./img/small-TV1.webp" alt="" /><span
+                          class="text1"
+                          >小米透明电视</span
+                        >
+                      </a>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li class="li-right">
+                      <a href="#"
+                        ><img src="./img/small-TV1.webp" alt="" /><span
+                          class="text1"
+                          >小米透明电视</span
+                        >
+                      </a>
+                    </li>
+                    <li class="li-right">
+                      <a href="#"
+                        ><img src="./img/small-TV1.webp" alt="" /><span
+                          class="text1"
+                          >小米透明电视</span
+                        >
+                      </a>
+                    </li>
+                    <li class="li-right">
+                      <a href="#"
+                        ><img src="./img/small-TV1.webp" alt="" /><span
+                          class="text1"
+                          >小米透明电视</span
+                        >
+                      </a>
+                    </li>
+                    <li class="li-right">
+                      <a href="#"
+                        ><img src="./img/small-TV1.webp" alt="" /><span
+                          class="text1"
+                          >小米透明电视</span
+                        >
+                      </a>
+                    </li>
+                    <li class="li-right">
+                      <a href="#"
+                        ><img src="./img/small-TV1.webp" alt="" /><span
+                          class="text1"
+                          >小米透明电视</span
+                        >
+                      </a>
+                    </li>
+                    <li class="li-right">
+                      <a href="#"
+                        ><img src="./img/small-TV1.webp" alt="" /><span
+                          class="text1"
+                          >小米透明电视</span
+                        >
+                      </a>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li class="li-right">
+                      <a href="#"
+                        ><img src="./img/small-TV1.webp" alt="" /><span
+                          class="text1"
+                          >小米透明电视</span
+                        >
+                      </a>
+                    </li>
+                    <li class="li-right">
+                      <a href="#"
+                        ><img src="./img/small-TV1.webp" alt="" /><span
+                          class="text1"
+                          >小米透明电视</span
+                        >
+                      </a>
+                    </li>
+                    <li class="li-right">
+                      <a href="#"
+                        ><img src="./img/small-TV1.webp" alt="" /><span
+                          class="text1"
+                          >小米透明电视</span
+                        >
+                      </a>
+                    </li>
+                    <li class="li-right">
+                      <a href="#"
+                        ><img src="./img/small-TV1.webp" alt="" /><span
+                          class="text1"
+                          >小米透明电视</span
+                        >
+                      </a>
+                    </li>
+                    <li class="li-right">
+                      <a href="#"
+                        ><img src="./img/small-TV1.webp" alt="" /><span
+                          class="text1"
+                          >小米透明电视</span
+                        >
+                      </a>
+                    </li>
+                    <li class="li-right">
+                      <a href="#"
+                        ><img src="./img/small-TV1.webp" alt="" /><span
+                          class="text1"
+                          >小米透明电视</span
+                        >
+                      </a>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li class="li-right">
+                      <a href="#"
+                        ><img src="./img/small-TV1.webp" alt="" /><span
+                          class="text1"
+                          >小米透明电视</span
+                        >
+                      </a>
+                    </li>
+                    <li class="li-right">
+                      <a href="#"
+                        ><img src="./img/small-TV1.webp" alt="" /><span
+                          class="text1"
+                          >小米透明电视</span
+                        >
+                      </a>
+                    </li>
+                    <li class="li-right">
+                      <a href="#"
+                        ><img src="./img/small-TV1.webp" alt="" /><span
+                          class="text1"
+                          >小米透明电视</span
+                        >
+                      </a>
+                    </li>
+                    <li class="li-right">
+                      <a href="#"
+                        ><img src="./img/small-TV1.webp" alt="" /><span
+                          class="text1"
+                          >小米透明电视</span
+                        >
+                      </a>
+                    </li>
+                    <li class="li-right">
+                      <a href="#"
+                        ><img src="./img/small-TV1.webp" alt="" /><span
+                          class="text1"
+                          >小米透明电视</span
+                        >
+                      </a>
+                    </li>
+                    <li class="li-right">
+                      <a href="#"
+                        ><img src="./img/small-TV1.webp" alt="" /><span
+                          class="text1"
+                          >小米透明电视</span
+                        >
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="li-left">
+                <a href="#"
+                  >笔记本 显示器<span class="iconfont">&#xe655;</span></a
+                >
+              </li>
+              <li class="li-left">
+                <a href="#"
+                  >家电 插线板<span class="iconfont">&#xe655;</span></a
+                >
+              </li>
+              <li class="li-left">
+                <a href="#">出行 穿戴<span class="iconfont">&#xe655;</span></a>
+              </li>
+              <li class="li-left">
+                <a href="#"
+                  >智能 路由器<span class="iconfont">&#xe655;</span></a
+                >
+              </li>
+              <li class="li-left">
+                <a href="#">电源 配件<span class="iconfont">&#xe655;</span></a>
+              </li>
+              <li class="li-left">
+                <a href="#">健康 儿童<span class="iconfont">&#xe655;</span></a>
+              </li>
+              <li class="li-left">
+                <a href="#">耳机 音箱<span class="iconfont">&#xe655;</span></a>
+              </li>
+              <li class="li-left">
+                <a href="#">生活 箱包<span class="iconfont">&#xe655;</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- 轮播图结束 -->
+      <div class="c">
+        <div class="little-tab">
+          <div class="span1">
+            <ul>
+              <li>
+                <a href="#">
+                  <span class="iconfont">&#xe61f;</span>
+                  <br />
+                  小米秒杀
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="iconfont">&#xe633;</span>
+                  <br />
+                  企业团购
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="iconfont">&#xe618;</span>
+                  <br />
+                  F码通道
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="iconfont">&#xe612;</span>
+                  <br />
+                  米粉卡
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="iconfont">&#xe63e;</span>
+                  <br />
+                  以旧换新
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="iconfont">&#xe60f;</span>
+                  <br />
+                  话费充值
+                </a>
+              </li>
+            </ul>
+          </div>
+          <img src="./img/c0c05274f2fbb55fbccb89622f798907.jpg" alt="" />
+          <img src="./img/b746a4db2e0473cc076a3a4b9bbe0235.jpg" alt="" />
+          <img src="./img/816a66edef10673b4768128b41804cae.jpg" alt="" />
+        </div>
+      </div>
+      <div class="main-page">
+        <div class="c">
+          <div class="flashsale">
+            <h2>小米闪购</h2>
+            <div class="countdown">
+              <div class="session">14:00场</div>
+              <img src="./img/shandian2.png" alt="" class="shandian" />
+              <div class="countdown-text">距离开始还有</div>
+              <div class="countdown-time">
+                <span>00</span><i>:</i> <span>00</span><i>:</i>
+                <span>00</span>
+              </div>
+            </div>
+
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./img/img1.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/img2.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/img3.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/img4.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/img5.jpg" alt="" />
+                </div>
+              </div>
+              <!-- <div class="swiper-button-prev"></div> -->
+              <!--左箭头。如果放置在swiper-container外面，需要自定义样式。-->
+              <!-- <div class="swiper-button-next"></div> -->
+              <!--右箭头。如果放置在swiper-container外面，需要自定义样式。-->
+            </div>
+            <script src="./js/swiper.min.js"></script>
+            <script>
+              var swiper = new Swiper(".swiper-container", {
+                nextButton: ".swiper-button-next",
+                prevButton: ".swiper-button-prev",
+                paginationClickable: true,
+                spaceBetween: 30,
+                centeredSlides: true,
+                autoplay: 2500,
+                autoplayDisableOnInteraction: false,
+                speed: 1000,
+              });
+            </script>
+          </div>
+          <div class="banner-img">
+            <img src="./img/6c907ad4004b32609a589bdada203443.webp" alt="" />
+          </div>
+          <div class="main-box1">
+            <h2>手机</h2>
+            <a href="#" class="mores"
+              >查看全部 <span class="iconfont"> &#xe62d;</span></a
+            >
+            <div class="box-img">
+              <img src="./img/574c6643ab91c6618bfb2d0e2c761d0b.webp" alt="" />
+            </div>
+            <div class="items">
+              <ul class="items-ul"></ul>
+            </div>
+          </div>
+          <div class="banner-img">
+            <img src="./img/c3b86ede4dd31d7c126d56fbdde4f855.webp" alt="" />
+          </div>
+          <div class="main-box1">
+            <h2>家电</h2>
+            <a href="#" class="mores"
+              >查看全部 <span class="iconfont"> &#xe62d;</span></a
+            >
+            <div class="box-img">
+              <img src="./img/574c6643ab91c6618bfb2d0e2c761d0b.webp" alt="" />
+            </div>
+            <div class="items">
+              <ul class="items-ul2"></ul>
+            </div>
+          </div>
+          <div class="banner-img">
+            <img src="./img/59e8fc8ba9718c266882719fb4bbcedd.webp" alt="" />
+          </div>
+          <div class="main-box1">
+            <h2>智能</h2>
+            <a href="#" class="mores"
+              >查看全部 <span class="iconfont"> &#xe62d;</span></a
+            >
+            <div class="box-img">
+              <img src="./img/574c6643ab91c6618bfb2d0e2c761d0b.webp" alt="" />
+            </div>
+            <div class="items">
+              <ul class="items-ul3"></ul>
+            </div>
+          </div>
+          <div class="banner-img">
+            <img src="./img/b169b3d64507ac23350f9bbbb7f81aa7.webp" alt="" />
+          </div>
+          <div class="main-box1">
+            <h2>搭配</h2>
+            <a href="#" class="mores"
+              >查看全部 <span class="iconfont"> &#xe62d;</span></a
+            >
+            <div class="box-img">
+              <img src="./img/574c6643ab91c6618bfb2d0e2c761d0b.webp" alt="" />
+            </div>
+            <div class="items">
+              <ul class="items-ul4"></ul>
+            </div>
+          </div>
+          <div class="banner-img">
+            <img src="./img/1615d1842fe85914a545297836a44271.webp" alt="" />
+          </div>
+          <div class="main-box1">
+            <h2>配件</h2>
+            <a href="#" class="mores"
+              >查看全部 <span class="iconfont"> &#xe62d;</span></a
+            >
+            <div class="box-img">
+              <img src="./img/574c6643ab91c6618bfb2d0e2c761d0b.webp" alt="" />
+            </div>
+            <div class="items">
+              <ul class="items-ul5"></ul>
+            </div>
+          </div>
+          <div class="banner-img">
+            <img src="./img/ddec858a9371b4d7833181941520bf8b.webp" alt="" />
+          </div>
+          <div class="main-box1">
+            <h2>周边</h2>
+            <a href="#" class="mores"
+              >查看全部 <span class="iconfont"> &#xe62d;</span></a
+            >
+            <div class="box-img">
+              <img src="./img/574c6643ab91c6618bfb2d0e2c761d0b.webp" alt="" />
+            </div>
+            <div class="items">
+              <ul class="items-ul6"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 底部开始 -->
+    <div class="footer">
+      <div class="c">
+        <div class="footer-1">
+          <ul class="footer-service">
+            <li>
+              <a href="#"
+                ><span class="iconfont">&#xe631; </span> 预约维修服务</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span class="iconfont">&#xe614;</span> 七天无理由退货</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span class="iconfont">&#xe6a5;</span> 十五天免费换货</a
+              >
+            </li>
+            <li>
+              <a href="#"><span class="iconfont">&#xe60c;</span> 满99元包邮</a>
+            </li>
+            <li>
+              <a href="#"
+                ><span class="iconfont">&#xe67f;</span> 520余家售后网点</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-2">
+          <ul>
+            <li>帮助中心</li>
+            <li><a href="#">账户管理</a></li>
+            <li><a href="#">购物指南</a></li>
+            <li><a href="#">订单操作</a></li>
+          </ul>
+          <ul>
+            <li>服务支持</li>
+            <li><a href="#">售后政策</a></li>
+            <li><a href="#">自助服务</a></li>
+            <li><a href="#">相关下载</a></li>
+          </ul>
+          <ul>
+            <li>线下门店</li>
+            <li><a href="#">小米之家</a></li>
+            <li><a href="#">服务网点</a></li>
+            <li><a href="#">授权体验店</a></li>
+          </ul>
+          <ul>
+            <li>关于小米</li>
+            <li><a href="#">了解小米</a></li>
+            <li><a href="#">加入小米</a></li>
+            <li><a href="#">投资者关系</a></li>
+            <li><a href="#">企业社会责任</a></li>
+            <li><a href="#">廉洁举报</a></li>
+          </ul>
+          <ul>
+            <li>关于我们</li>
+            <li><a href="#">新浪微博</a></li>
+            <li><a href="#">官方微信</a></li>
+            <li><a href="#">联系我们</a></li>
+            <li><a href="#">公益基金会</a></li>
+          </ul>
+          <ul>
+            <li>特色服务</li>
+            <li><a href="#">F码通道</a></li>
+            <li><a href="#">礼物码</a></li>
+            <li><a href="#">防伪查询</a></li>
+          </ul>
+          <div class="contact">
+            <p class="phone">400-100-5678</p>
+            <p>8:00-18:00（仅收市话费）</p>
+            <a href="#" class="rengong"
+              ><em class="iconfont">&#xe635;</em>人工客服</a
+            >
+            <div class="follow">
+              关注小米:
+              <a href="#" class="iconfont"><b>&#xe626;</b></a>
+              <a href="#" class="iconfont wx"
+                ><b>&#xe63d;</b>
+
+                <br />
+                <img src="./img/wx-img.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bot">
+      <div class="c">
+        <div class="mi-logo">
+          <img src="./img/mi-logo.jpg" alt="" />
+        </div>
+        <div class="bot-text">
+          <p class="text1">
+            <a href="#">小米商城</a><span> | </span> <a href="#">MIUI</a
+            ><span> | </span> <a href="#">米家</a><span> | </span>
+            <a href="#">米聊</a><span> | </span> <a href="#">多看</a
+            ><span> | </span> <a href="#">游戏</a><span> | </span>
+            <a href="#">政企服务</a><span> | </span> <a href="#">小米天猫店</a
+            ><span> | </span> <a href="#">小米集团隐私政策</a><span> | </span>
+            <a href="#">小米公司儿童信息保护规则</a><span> | </span>
+            <a href="#">小米商城隐私政策</a><span> | </span>
+            <a href="#">小米商城用户协议</a><span> | </span>
+            <a href="#">问题反馈</a><span> | </span>
+            <a href="#">Select Location</a>
+          </p>
+          <p class="text2">
+            &copy;mi.com 京ICP证110507号 京ICP备10046444号
+            京公网安备11010802020134号 京网文[2020]0276-042号
+            <br />
+            （京）网械平台备字（2018）第00005号 互联网药品信息服务资格证
+            (京)-非经营性-2014-0090 营业执照 医疗器械质量公告
+            <br />
+            增值电信业务许可证 网络食品经营备案 京食药网食备201810017
+            食品经营许可证
+            <br />
+            违法和不良信息举报电话：171-5104-4404 知识产权侵权投诉
+            本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
+          </p>
+        </div>
+        <div class="links">
+          <img src="./img/truste.png" alt="" />
+          <img src="./img/v-logo-2.png" alt="" />
+          <img src="./img/v-logo-1.png" alt="" />
+          <img src="./img/ba10428a4f9495ac310fd0b5e0cf8370.png" alt="" />
+          <img src="./img/187f1d11f69ca5140dba7f4be6156e38.png" alt="" />
+        </div>
+        <div class="last-xuan">
+          <p>让全球每个人都能享受科技带来的美好生活</p>
+        </div>
+      </div>
+    </div>
+    <script src="./js/ajax2.js"></script>
+    <script src="./js/xiaomishouye.js"></script>
+    <script src="./js/returntop.js"></script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+.main {
+  min-height: 730px;
+  background-color: #f9f9f9;
+  width: 100%;
+  padding: 1px;
+}
+.warp {
+  height: 530px;
+  width: 855px;
+  background-color: #ffffff;
+  margin: 50px auto;
+}
+.logo img {
+  display: block;
+  margin: 0 auto;
+}
+.title h4 {
+  font-size: 30px;
+  font-weight: normal;
+  text-align: center;
+}
+form {
+  width: 280px;
+  margin: 0 auto;
+}
+form input {
+  height: 40px;
+  width: 300px;
+  margin-top: 10px;
+  outline: 0;
+}
+form button {
+  margin-top: 30px;
+  border: none;
+  height: 42px;
+  width: 310px;
+  background-color: #ff6700;
+  color: #ffffff;
+  outline: 0;
+  cursor: pointer;
+}
+.warp p {
+  text-align: center;
+  margin-top: 80px;
+  font-size: 14px;
+  color: #bbbbbb;
+}
+.warp p span {
+  color: #000000;
+  font-weight: bold;
+}
+.main p {
+  text-align: center;
+  font-size: 14px;
+  color: #bbbbbb;
+}

@@ -1,0 +1,262 @@
+.c {
+  width: 1226px;
+  margin: 0 auto;
+}
+.header {
+  height: 40px;
+  font-size: 12px;
+  background: #333;
+}
+.nav {
+  height: 40px;
+  width: 800px;
+  display: inline-block;
+}
+.nav li {
+  float: left;
+}
+.nav li a {
+  color: #b0b0b0;
+  line-height: 40px;
+  transition: color 0.3s;
+}
+.vertical {
+  color: #424242;
+  margin: 0 5px;
+}
+.nav-right {
+  float: right;
+  height: 40px;
+}
+.nav-right li {
+  float: left;
+}
+.nav-right li a {
+  transition: color 0.3s;
+}
+.nav li:hover a {
+  color: #ffffff;
+}
+.nav .download:hover img {
+  display: block;
+}
+.nav-right li:hover a {
+  color: #ffffff;
+}
+.nav-right .shop-cart:hover a {
+  color: #ff6700;
+}
+.download img {
+  height: 90px;
+  width: 90px;
+  position: absolute;
+  top: 40px;
+  left: 644px;
+  display: none;
+}
+
+.nav-right li a {
+  color: #b0b0b0;
+  line-height: 40px;
+}
+.nav-right .shop-cart {
+  width: 120px;
+  height: 40px;
+  margin-left: 15px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  font-size: 12px;
+  background: #424242;
+  text-align: center;
+}
+/* 右侧选项卡 */
+.tab-right {
+  position: fixed;
+  right: 0px;
+  top: 120px;
+}
+.tab-right a {
+  position: relative;
+  display: block;
+  width: 82px;
+  height: 90px;
+  margin-top: -1px;
+  background-color: #fff;
+  border: 1px solid #f5f5f5;
+  text-align: center;
+  font-size: 14px;
+  color: #757575;
+  transition: color 0.3s;
+}
+.tab-right a:hover {
+  color: #ff6700;
+}
+.tab-right a .iconfont {
+  display: block;
+  font-size: 30px;
+  margin-top: 18px;
+  margin-bottom: 9px;
+}
+/* 右侧选项卡结束 */
+.main {
+  min-height: 900px;
+  background-color: #ccc;
+}
+.footer {
+  min-height: 340px;
+}
+.footer-1 {
+  height: 80px;
+  border-bottom: solid 1px #e0e0e0;
+}
+.footer-service {
+  float: left;
+  margin: 27px 0;
+}
+.footer-service li {
+  float: left;
+  height: 25px;
+  width: 242px;
+  border-left: 1px solid #e0e0e0;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+}
+
+.footer-service li:nth-child(1) {
+  border-left: none;
+}
+.footer-service li a {
+  color: #616161;
+  transition: color 0.3s;
+}
+.footer-service li:hover a {
+  color: #ff6700;
+}
+.footer-service li a .iconfont {
+  font-size: 30px;
+  vertical-align: top;
+}
+.footer-2 {
+  min-height: 192px;
+}
+.footer-2 ul {
+  width: 160px;
+  min-height: 112px;
+  float: left;
+  margin-top: 26px;
+}
+.footer-2 ul li {
+  width: 160px;
+  height: 17px;
+  font-size: 12px;
+  margin-top: 12px;
+}
+.footer-2 ul li:first-child {
+  font-size: 14px;
+  color: #424242;
+  margin-bottom: 24px;
+}
+.footer-2 ul li a {
+  color: #333;
+  transition: color 0.2s;
+}
+.footer-2 ul li:hover a {
+  color: #ff6700;
+}
+.contact {
+  height: 112px;
+  width: 252px;
+  float: right;
+  margin-top: 40px;
+  border-left: 1px solid #e0e0e0;
+  text-align: center;
+  color: #616161;
+}
+.phone {
+  font-size: 22px;
+  line-height: 1;
+  color: #ff6700;
+}
+.contact p {
+  margin: 0 0 5px 0;
+}
+.contact .rengong {
+  display: block;
+  width: 120px;
+  height: 30px;
+  margin: 0 auto;
+  border: solid 1px #ff6700;
+  background: #fff;
+  color: #ff6700;
+  font-size: 12px;
+  line-height: 30px;
+}
+.contact .rengong:hover {
+  background-color: #ff6700;
+  color: #ffffff;
+  transition: all 0.4s;
+}
+.follow {
+  font-size: 12px;
+  margin-top: 6px;
+}
+.follow .iconfont {
+  font-size: 24px;
+  color: #616161;
+}
+.follow .iconfont:hover {
+  color: #ff6700;
+}
+.follow img {
+  height: 126px;
+  width: 126px;
+  margin-left: 90px;
+  display: none;
+}
+.follow .wx:hover img {
+  display: block;
+}
+.footer-bot {
+  min-height: 200px;
+  padding: 30px 0;
+  font-size: 12px;
+  background: #fafafa;
+}
+.mi-logo {
+  float: left;
+}
+.mi-logo img {
+  width: 57px;
+  height: 57px;
+  margin-right: 10px;
+}
+.bot-text {
+  float: left;
+  width: 1080px;
+  line-height: 18px;
+}
+.bot-text .text1 a {
+  color: #757575;
+}
+.bot-text .text1 a:hover {
+  color: #ff6700;
+}
+.links img {
+  margin-top: 18px;
+}
+.links img:nth-child(1) {
+  height: 28px;
+  margin-left: 66px;
+}
+.links img:nth-child(5) {
+  height: 40px;
+}
+.last-xuan {
+  margin-top: 40px;
+  font-size: 20px;
+  font-family: FangSong;
+  font-weight: bold;
+  color: #ccc;
+  text-align: center;
+}
